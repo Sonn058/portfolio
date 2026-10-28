@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio — Files</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#" data-home><span id="profile-name">Son Jihyeon</span><em>portfolio</em></a>
+    <span class="pill">file : works_2026</span>
+    <nav class="top-nav">
+      <button type="button" data-about>About</button>    </nav>
+  </header>
+
+  <main class="desk">
+    <div class="intro">
+      <h1>Selected Files</h1>
+      <p id="intro-text"></p>
+      <p class="intro-side">(Index)<br>2026</p>
+    </div>
+
+    <div class="folder is-closed" id="folder" data-cat="all">
+      <div class="tabs" role="tablist" id="tabs" aria-label="카테고리"></div>
+
+      <div class="folder-back">
+        <div class="stage" id="stage">
+          <div class="track" id="track"></div>
+        </div>
+      </div>
+
+      <div class="pocket">
+        <span class="pocket-shade"><span class="pocket-surface" id="pocket-surface"></span></span>
+        <div class="pocket-body">
+          <div class="note" aria-hidden="true">
+            <svg class="clip" viewBox="0 0 22 70" aria-hidden="true">
+              <defs>
+                <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#7d8086"/><stop offset=".35" stop-color="#f4f5f7"/>
+                  <stop offset=".6" stop-color="#b9bcc1"/><stop offset="1" stop-color="#e9eaec"/>
+                </linearGradient>
+              </defs>
+              <path class="c1" d="M7 24 V56 a5 5 0 0 0 10 0 V11 a7 7 0 0 0 -14 0 V54"/>
+              <path class="c2" d="M7 24 V56 a5 5 0 0 0 10 0 V11 a7 7 0 0 0 -14 0 V54"/>
+            </svg>
+            <p class="note-head">Index <span id="note-count"></span></p>
+            <ol id="note-list"></ol>
+          </div>
+          <div class="cover">
+            <p class="pocket-kicker">(00) — portfolio archive</p>
+            <h2 class="pocket-title">Selected Files</h2>
+            <p class="pocket-ko">폴더를 클릭하면 작업물이 펼쳐집니다.</p>
+            <div class="pocket-meta">
+              <span id="cover-count"></span>
+              <span>2026</span>
+              <button type="button" class="cover-btn" id="cover-btn">Open the folder ↗</button>
+            </div>
+          </div>
+          <div class="pocket-info">
+            <p class="pocket-kicker" id="pocket-kicker"></p>
+            <h2 class="pocket-title" id="pocket-title"></h2>
+            <p class="pocket-ko" id="pocket-ko"></p>
+            <div class="pocket-meta">
+              <span id="pocket-count"></span>
+              <span class="scrub" id="scrub" hidden><i id="scrub-thumb"></i></span>
+              <span class="hint" id="hint">종이를 클릭해 꺼내 보세요</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <span id="foot-name">© 2026</span>
+      <span>Digital Fabrication 2 — Portfolio</span>
+      <span>Hover to lift · Click to pull out</span>
+    </footer>
+  </main>
+
+  <div class="viewer" id="viewer" hidden>
+    <div class="viewer-inner" id="viewer-inner"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
